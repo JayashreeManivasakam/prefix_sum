@@ -1,0 +1,23 @@
+class Prefixsum {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+       int size=0;
+      size=sc.nextInt();
+      int[] arr;
+      arr=new int[size];
+      if(size>0){
+         for (int i=0;i<size;i++){
+        arr[i]=sc.nextInt();
+         }
+     System.out.print(arr[0] + " ");
+      for(int j=1;j<size;j++){
+        arr[j]=arr[j]+arr[j-1];
+       System.out.print(arr[j] + " ");}}
+       
+       else{
+            System.out.print("enter a valid array size");
+      
+       }
+      
+}
+}
